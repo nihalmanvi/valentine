@@ -65,12 +65,20 @@ body {
   margin: 0 0 10px;
 }
 
-.prompt {
+.prompt-slot {
+  position: relative;
   margin: 0 0 26px;
+  height: calc(1.35em * 2);
+  overflow: hidden;
+}
+
+.prompt {
+  margin: 0;
   font-size: 1.05rem;
   line-height: 1.35;
   color: var(--muted);
-  min-height: calc(1.35em * 2);
+  position: absolute;
+  inset: 0;
 }
 
 .scene {
@@ -422,7 +430,7 @@ body {
   .buttons {
     gap: 12px;
   }
-  .prompt {
-    min-height: calc(1.35em * 3);
+  .prompt-slot {
+    height: calc(1.35em * 3);
   }
 }
