@@ -68,8 +68,7 @@ body {
 .prompt-slot {
   position: relative;
   margin: 0 0 26px;
-  height: calc(1.35em * 2);
-  overflow: hidden;
+  min-height: calc(1.35em * 2);
 }
 
 .prompt {
@@ -108,8 +107,7 @@ body {
 .reaction-slot {
   position: relative;
   margin: 6px 0 22px;
-  height: calc(1.35em * 2);
-  overflow: hidden;
+  min-height: calc(1.35em * 2);
 }
 
 .reaction {
@@ -124,7 +122,7 @@ body {
 
 .buttons {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
   flex-wrap: wrap;
   position: relative;
@@ -157,8 +155,8 @@ body {
 
 .no-wrap {
   position: relative;
-  min-width: clamp(140px, 38vw, 200px);
-  min-height: clamp(80px, 22vw, 130px);
+  min-width: clamp(140px, 34vw, 180px);
+  min-height: clamp(64px, 18vw, 96px);
 }
 
 .btn.no {
@@ -442,5 +440,6 @@ body {
     gap: 12px;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
   }
 }
