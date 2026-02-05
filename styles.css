@@ -155,8 +155,8 @@ body {
 
 .no-wrap {
   position: relative;
-  min-width: 260px;
-  min-height: 140px;
+  min-width: clamp(150px, 40vw, 260px);
+  min-height: clamp(80px, 20vw, 140px);
 }
 
 .btn.no {
@@ -438,6 +438,8 @@ body {
   }
   .buttons {
     gap: 12px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .prompt-slot {
     height: 1.35em;
