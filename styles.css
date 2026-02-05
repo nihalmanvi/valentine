@@ -440,9 +440,15 @@ body {
     gap: 12px;
   }
   .prompt-slot {
-    height: calc(1.35em * 3);
+    height: 1.35em;
   }
   .reaction-slot {
-    height: calc(1.35em * 3);
+    height: 1.35em;
+  }
+  .prompt,
+  .reaction {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
