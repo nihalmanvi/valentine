@@ -165,7 +165,7 @@ body {
   top: 0;
   transform: translate(
       calc(-50% + var(--tx, 0px)),
-      var(--ty, 0px)
+      calc(var(--ty, 0px) + 6px)
     );
   background: #f4f0ed;
   color: var(--muted);
