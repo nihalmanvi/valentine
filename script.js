@@ -29,10 +29,17 @@ const zapNoButton = () => {
   const wrapRect = noWrap.getBoundingClientRect();
   const btnRect = noBtn.getBoundingClientRect();
 
-  const maxX = Math.max(20, (wrapRect.width - btnRect.width) / 2 - 8);
-  const maxY = Math.max(14, wrapRect.height - btnRect.height - 8);
+  const mobile = wrapRect.width < 420;
+  const maxX = Math.max(
+    20,
+    (wrapRect.width - btnRect.width) * (mobile ? 0.9 : 0.7)
+  );
+  const maxY = Math.max(
+    14,
+    (wrapRect.height - btnRect.height) * (mobile ? 0.9 : 0.7)
+  );
   const nextX = Math.floor((Math.random() * 2 - 1) * maxX);
-  const nextY = Math.floor(Math.random() * maxY);
+  const nextY = Math.floor((Math.random() * 2 - 0.2) * maxY * 0.5);
 
   noBtn.style.setProperty("--tx", `${nextX}px`);
   noBtn.style.setProperty("--ty", `${nextY}px`);
