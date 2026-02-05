@@ -79,6 +79,7 @@ body {
   color: var(--muted);
   position: absolute;
   inset: 0;
+  white-space: normal;
 }
 
 .scene {
@@ -118,6 +119,7 @@ body {
   color: var(--accent-dark);
   position: absolute;
   inset: 0;
+  white-space: normal;
 }
 
 .buttons {
@@ -155,8 +157,8 @@ body {
 
 .no-wrap {
   position: relative;
-  min-width: clamp(150px, 40vw, 260px);
-  min-height: clamp(80px, 20vw, 140px);
+  min-width: clamp(140px, 38vw, 200px);
+  min-height: clamp(80px, 22vw, 130px);
 }
 
 .btn.no {
@@ -440,17 +442,5 @@ body {
     gap: 12px;
     flex-wrap: nowrap;
     justify-content: space-between;
-  }
-  .prompt-slot {
-    height: 1.35em;
-  }
-  .reaction-slot {
-    height: 1.35em;
-  }
-  .prompt,
-  .reaction {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
