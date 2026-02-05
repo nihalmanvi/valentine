@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine for Anisha</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <p class="eyebrow">Incoming request from: Koala HQ</p>
+        <h1 class="title">Ani, will you be my Valentine?</h1>
+        <p id="prompt" class="prompt">Please choose wisely. The squirrel is watching.</p>
+
+        <div class="scene" id="scene" aria-live="polite">
+          <svg class="scene-svg" viewBox="0 0 620 320" role="img" aria-label="A cute squirrel and koala">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffe8cc" />
+                <stop offset="100%" stop-color="#ffd1dc" />
+              </linearGradient>
+            </defs>
+
+            <rect x="10" y="20" width="600" height="280" rx="32" fill="url(#sky)" />
+
+            <g id="tree">
+              <rect x="430" y="130" width="30" height="140" rx="10" fill="#8b5a2b" />
+              <circle class="tree-leaf" cx="445" cy="110" r="50" fill="#6fbf73" />
+              <circle class="tree-leaf" cx="480" cy="120" r="45" fill="#7cc57f" />
+              <circle class="tree-leaf" cx="410" cy="120" r="45" fill="#79bf7a" />
+            </g>
+
+            <g id="squirrel" class="squirrel">
+              <path d="M95 170 C85 110, 170 70, 220 115 C265 155, 230 215, 165 215" fill="none" stroke="#a55a2b" stroke-width="22" stroke-linecap="round" />
+              <ellipse cx="165" cy="205" rx="44" ry="36" fill="#c9783a" />
+              <ellipse cx="160" cy="212" rx="20" ry="16" fill="#e7b38b" />
+              <circle cx="215" cy="175" r="26" fill="#c9783a" />
+              <circle cx="200" cy="150" r="10" fill="#c9783a" />
+              <circle cx="226" cy="150" r="10" fill="#c9783a" />
+              <circle cx="206" cy="172" r="8" fill="#4e2c16" />
+              <circle cx="224" cy="172" r="8" fill="#4e2c16" />
+              <circle cx="202" cy="186" r="6" fill="#ffb3c1" opacity="0.8" />
+              <circle cx="228" cy="186" r="6" fill="#ffb3c1" opacity="0.8" />
+              <circle cx="215" cy="188" r="6" fill="#3b2417" />
+              <path d="M210 194 Q215 198 220 194" fill="none" stroke="#3b2417" stroke-width="2.5" stroke-linecap="round" />
+              <circle cx="140" cy="214" r="8" fill="#c9783a" />
+              <circle cx="188" cy="216" r="8" fill="#c9783a" />
+              <circle cx="202" cy="182" r="4" fill="#ffffff" opacity="0.8" />
+              <circle cx="222" cy="182" r="4" fill="#ffffff" opacity="0.8" />
+            </g>
+
+            <g id="koala" class="koala">
+              <ellipse cx="360" cy="220" rx="54" ry="42" fill="#b6b6b6" />
+              <ellipse cx="360" cy="232" rx="22" ry="18" fill="#d1d1d1" />
+              <circle cx="360" cy="170" r="40" fill="#b6b6b6" />
+              <circle cx="315" cy="165" r="18" fill="#9a9a9a" />
+              <circle cx="405" cy="165" r="18" fill="#9a9a9a" />
+              <circle class="eye eye-open eye-left" cx="346" cy="168" r="7" fill="#2d2d2d" />
+              <circle class="eye eye-open eye-right" cx="374" cy="168" r="7" fill="#2d2d2d" />
+              <path class="eye eye-closed eye-left" d="M338 170 Q346 165 354 170" fill="none" stroke="#2d2d2d" stroke-width="3" stroke-linecap="round" />
+              <path class="eye eye-closed eye-right" d="M366 170 Q374 165 382 170" fill="none" stroke="#2d2d2d" stroke-width="3" stroke-linecap="round" />
+              <path class="eye eye-cross eye-left" d="M340 162 L352 174 M352 162 L340 174" stroke="#2d2d2d" stroke-width="3" stroke-linecap="round" />
+              <path class="eye eye-cross eye-right" d="M368 162 L380 174 M380 162 L368 174" stroke="#2d2d2d" stroke-width="3" stroke-linecap="round" />
+              <circle cx="330" cy="182" r="7" fill="#ffb3c1" opacity="0.7" />
+              <circle cx="390" cy="182" r="7" fill="#ffb3c1" opacity="0.7" />
+              <ellipse cx="360" cy="188" rx="12" ry="16" fill="#2d2d2d" />
+              <path class="mouth mouth-neutral" d="M352 200 Q360 206 368 200" fill="none" stroke="#2d2d2d" stroke-width="2.5" stroke-linecap="round" />
+              <path class="mouth mouth-sad" d="M352 206 Q360 198 368 206" fill="none" stroke="#2d2d2d" stroke-width="2.5" stroke-linecap="round" />
+              <path class="mouth mouth-smile" d="M350 198 Q360 210 370 198" fill="none" stroke="#2d2d2d" stroke-width="2.5" stroke-linecap="round" />
+              <circle cx="333" cy="182" r="6" fill="#ffffff" opacity="0.8" />
+              <circle cx="387" cy="182" r="6" fill="#ffffff" opacity="0.8" />
+              <ellipse cx="320" cy="215" rx="12" ry="10" fill="#9a9a9a" />
+              <ellipse cx="400" cy="215" rx="12" ry="10" fill="#9a9a9a" />
+              <ellipse cx="338" cy="250" rx="14" ry="10" fill="#9a9a9a" />
+              <ellipse cx="382" cy="250" rx="14" ry="10" fill="#9a9a9a" />
+            </g>
+
+            <g id="hearts" class="hearts">
+              <path class="heart heart-a" d="M320 90 C320 70, 350 70, 350 90 C350 110, 320 115, 320 130 C320 115, 290 110, 290 90 C290 70, 320 70, 320 90" fill="#ff6b8a" />
+              <path class="heart heart-b" d="M370 70 C370 55, 395 55, 395 70 C395 85, 370 88, 370 100 C370 88, 345 85, 345 70 C345 55, 370 55, 370 70" fill="#ff6b8a" />
+              <path class="heart heart-c" d="M430 95 C430 80, 452 80, 452 95 C452 110, 430 112, 430 125 C430 112, 408 110, 408 95 C408 80, 430 80, 430 95" fill="#ff6b8a" />
+              <path class="heart heart-d" d="M275 105 C275 90, 297 90, 297 105 C297 120, 275 122, 275 135 C275 122, 253 120, 253 105 C253 90, 275 90, 275 105" fill="#ff6b8a" />
+            </g>
+
+            <g id="bushes" class="bushes">
+              <ellipse cx="120" cy="265" rx="60" ry="26" fill="#7bbf76" />
+              <ellipse cx="200" cy="270" rx="70" ry="28" fill="#6fb36a" />
+              <ellipse cx="300" cy="268" rx="80" ry="30" fill="#78bf73" />
+              <ellipse cx="380" cy="270" rx="60" ry="26" fill="#6fb36a" />
+              <ellipse cx="480" cy="268" rx="70" ry="28" fill="#78bf73" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="reaction" id="reaction" aria-live="polite">
+          Koala status: calm and curious.
+        </div>
+
+        <div class="buttons">
+          <button class="btn yes" id="yesBtn">Yes</button>
+          <div class="no-wrap" id="noWrap">
+            <button class="btn no" id="noBtn">No</button>
+          </div>
+        </div>
+
+        <p class="footer">Squirrel & Koala Labs · Valentine Division</p>
+      </section>
+      <div class="fireworks" id="fireworks" aria-hidden="true">
+        <span class="burst b1"></span>
+        <span class="burst b2"></span>
+        <span class="burst b3"></span>
+        <span class="burst b4"></span>
+        <span class="burst b5"></span>
+        <span class="burst b6"></span>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
