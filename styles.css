@@ -105,10 +105,12 @@ body {
 }
 
 .reaction {
+  line-height: 1.35;
   font-weight: 600;
   margin: 6px 0 22px;
-  min-height: 1.6em;
+  min-height: calc(1.35em * 2);
   color: var(--accent-dark);
+  overflow: hidden;
 }
 
 .buttons {
@@ -432,5 +434,8 @@ body {
   }
   .prompt-slot {
     height: calc(1.35em * 3);
+  }
+  .reaction {
+    min-height: calc(1.35em * 3);
   }
 }
